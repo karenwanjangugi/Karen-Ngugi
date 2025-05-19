@@ -3,7 +3,7 @@ const hello = (name)=>{
     // hello(name);
     
 };
-// this is how you pass a function as an arguement in another function(call back fn) 
+// this is how you pass a function as an argument in another function(call back fn) 
 const greet = (name,hello) => {
     console.log(`Hello ${name}`);
     hello(name);

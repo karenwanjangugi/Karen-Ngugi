@@ -712,23 +712,33 @@ function User(username,email,isActive){
   this.isActive = isActive;
 }
 
+// User.prototype.randomize = function(){
+// this.isActive = Math.random() < 0.5;
+//   if (!this.active) == false){
+   
+//    console.log("deactivated");
+//   }
+//  } )
+//  };
+// userss.forEach(user => user.randomize());
 
-let userss = [
+const userss = [
   new User("Rena" ,"rena@gmail.com",true),
   new User("Rene" ,"rene@gmail.com",true),
   new User("Reni" ,"reni@gmail.com",true),
   new User("Reno" ,"reno@gmail.com",true)
   
 ]
+userss.forEach(user =>{
 
-users.forEach(user =>{
- if ( user.isActive = Math.floor(Math.random() * userss.length) == false){
-  console.log("deactivated");
-  
- }
-} )
+  if ( user.isActive = Math.random() < 0.5){
+    user.isActive = false;
+   
+   console.log(`${user.username} deactivated`);
+  }
+ } )
 
-// console.log(User);
+
 
 
 
